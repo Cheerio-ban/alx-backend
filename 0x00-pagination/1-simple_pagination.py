@@ -3,7 +3,6 @@
 """ Simple Pagination. """
 
 import csv
-import math
 from typing import List, Tuple
 
 
@@ -48,5 +47,3 @@ class Server:
                     values.append(row)
 
             return values
-            
-        return values
