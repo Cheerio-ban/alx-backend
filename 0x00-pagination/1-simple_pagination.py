@@ -47,3 +47,16 @@ class Server:
                     values.append(row)
 
             return values
+        
+    def get_hyper(self, page: int = 1, page_size: int = 10) -> dict:
+        """ Returns a dict containing some particular methods. """
+        page_begin, page_end = index_range(page, page_size)
+        data = self.get_page(page, page_size)
+        return {
+            "page_size": page_size,
+            "page": page_begin,
+            "data": data,
+            "next_page": page_begin + 1 if page_begin < 19419 else None,
+            "prev_page": page_begin - 1 if page_begin > 0 else None,
+            "total_pages": 19419
+        }
