@@ -2,7 +2,8 @@
 
 """ A basic dictionary using a class """
 
-from base_caching import BaseCaching
+# from base_caching import BaseCaching
+BaseCaching = __import__('base_caching').BaseCaching
 
 
 class BasicCache(BaseCaching):
