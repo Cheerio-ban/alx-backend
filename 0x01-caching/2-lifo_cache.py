@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-""" LIFO caching. """
+""" LIFO caching approach """
 
 # from base_caching import BaseCaching
 BaseCaching = __import__('base_caching').BaseCaching
