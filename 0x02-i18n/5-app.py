@@ -47,6 +47,7 @@ def get_user():
 
 @app.before_request
 def before_request():
+    """Runs this at the start of the app and logs user in."""
     user = get_user()
     g.user = user
 
