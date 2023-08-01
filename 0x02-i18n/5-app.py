@@ -54,8 +54,7 @@ def before_request():
 @app.route('/')
 def index():
     """Landing page"""
-    user = get_user()
-    return render_template('5-index.html', user=user)
+    return render_template('5-index.html')
 
 
 if __name__ == '__main__':
